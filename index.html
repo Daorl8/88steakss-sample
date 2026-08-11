@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>88스테이크 서울숲 — 부담 없이 즐기는 큐브 스테이크 맛집</title>
+<meta name="description" content="서울숲·성수 큐브 스테이크 맛집 88스테이크. 부드럽고 육즙 가득한 오리지날 큐브스테이크에 따끈한 밥·촉촉한 빵·특제 소스까지. 서울숲역 도보 5분, 혼밥·데이트·모임·회식 모두 좋은 공간. 네이버 예약.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FBF6EE">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="88스테이크 서울숲 — 큐브 스테이크 맛집">
+<meta property="og:description" content="기본이 제일 맛있다. 서울숲·성수 부담 없는 큐브 스테이크, 88스테이크.">
+<meta property="og:url" content="https://88steakss-sample.lgt3232.workers.dev/">
+<meta property="og:image" content="https://88steakss-sample.lgt3232.workers.dev/hero-original.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://88steakss-sample.lgt3232.workers.dev/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23201C19'/%3E%3Ctext x='16' y='23' font-family='Arial Black,sans-serif' font-size='16' font-weight='900' fill='%23E0A32E' text-anchor='middle'%3E88%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="hero-original.jpg" fetchpriority="high">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"88스테이크 서울숲","servesCuisine":"스테이크","description":"서울숲·성수 큐브 스테이크 맛집. 부드럽고 육즙 가득한 오리지날 큐브스테이크.","image":"https://88steakss-sample.lgt3232.workers.dev/hero-original.jpg","url":"https://88steakss-sample.lgt3232.workers.dev/","telephone":"0507-1395-0188","priceRange":"₩₩","address":{"@type":"PostalAddress","streetAddress":"성수일로1길 16 2층","addressLocality":"성동구","addressRegion":"서울","addressCountry":"KR"},"areaServed":["서울숲","성수","뚝섬"],"acceptsReservations":"True","sameAs":["https://www.instagram.com/88steakss/"]}
+</script>
+<style>
+  @font-face{font-family:'BMJUA';src:url('bmjua-sub.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+  @font-face{font-family:'Anton';src:url('anton-sub.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+  @font-face{font-family:'Pretendard';src:url('pretendard-sub.woff2') format('woff2');font-weight:45 930;font-style:normal;font-display:swap}
+  :root{
+    --cream:#FBF6EE; --cream2:#F4ECDD; --paper:#FFFDF8; --ink:#201C19; --ink2:#5A5149; --faint:#948877;
+    --line:#E7DCC8; --line2:#DACBB0;
+    --red:#C63D2B; --red-d:#A82E1F; --amber:#E0A32E; --amber-d:#B47A16; --green:#5B7A3F;
+    --disp:'BMJUA',ui-rounded,system-ui,sans-serif;
+    --en:'Anton',Impact,sans-serif;
+    --kr:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    --maxw:1180px; --pad:clamp(20px,5vw,60px); --bar:64px; --r:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;color-scheme:light;scroll-padding-top:var(--bar);overflow-x:hidden;scroll-behavior:auto}
+  body{font-family:var(--kr);background:var(--cream);color:var(--ink);line-height:1.75;font-size:16px;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+  ::selection{background:var(--amber);color:var(--ink)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+  .disp{font-family:var(--disp)} .en{font-family:var(--en);letter-spacing:.01em}
+  .eyebrow{font-family:var(--kr);font-size:.76rem;font-weight:800;letter-spacing:.14em;color:var(--red);text-transform:uppercase}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--disp);font-size:1.02rem;cursor:pointer;padding:14px 30px;border-radius:44px;border:2px solid transparent;transition:transform .16s,background .2s,color .2s,border-color .2s}
+  .btn:active{transform:scale(.97) rotate(-.5deg)}
+  .btn-red{background:var(--red);color:#fff} .btn-red:hover{background:var(--red-d)}
+  .btn-ink{background:var(--ink);color:var(--cream)} .btn-ink:hover{background:#3a332c}
+  .btn-line{background:transparent;color:var(--ink);border-color:var(--ink)} .btn-line:hover{background:var(--ink);color:var(--cream)}
+
+  /* 손그림 두들 */
+  .doodle{position:absolute;pointer-events:none;color:var(--ink);opacity:.9}
+  .scribble{display:inline-block;position:relative}
+  .scribble::after{content:"";position:absolute;left:-2%;right:-2%;bottom:-.12em;height:.42em;background:var(--amber);opacity:.85;z-index:-1;border-radius:40% 60% 55% 45%/60% 50% 55% 45%;transform:rotate(-1deg)}
+
+  header.top{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:12px var(--pad);transition:background .3s,box-shadow .3s,padding .3s}
+  header.top.solid{background:rgba(251,246,238,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line);padding:8px var(--pad)}
+  .brand{display:flex;align-items:center;gap:9px}
+  .brand .mk{width:40px;height:40px;border-radius:11px;background:var(--ink);color:var(--amber);font-family:var(--en);font-size:1.15rem;display:flex;align-items:center;justify-content:center;transform:rotate(-3deg)}
+  .brand b{font-family:var(--en);font-size:1.2rem;letter-spacing:.03em;color:var(--ink)}
+  .nav{display:flex;align-items:center;gap:1.7rem}
+  .nav a{font-family:var(--disp);font-size:1rem;color:var(--ink2);transition:color .2s}
+  .nav a:hover{color:var(--red)}
+  .nav a.cta{background:var(--red);color:#fff;padding:8px 18px;border-radius:40px}
+  .nav a.cta:hover{background:var(--red-d)}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+  .burger span{width:24px;height:2.5px;background:var(--ink);border-radius:2px;transition:.3s}
+  .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+  .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+  #drawer{position:fixed;inset:0;z-index:59;background:rgba(251,246,238,.98);display:none;flex-direction:column;align-items:center;justify-content:center;gap:22px}
+  #drawer.open{display:flex}
+  #drawer a{font-family:var(--disp);font-size:1.7rem;color:var(--ink)}
+
+  .demo-note{background:var(--ink);color:var(--cream);text-align:center;font-size:12.5px;padding:7px 14px;font-weight:500}
+
+  section{padding:clamp(60px,8vw,108px) 0}
+  .sec-head{text-align:center;max-width:56ch;margin:0 auto clamp(36px,5vw,56px)}
+  .sec-head .eyebrow{display:block;margin-bottom:12px}
+  .sec-head h2{font-family:var(--disp);font-size:clamp(2rem,5vw,3.1rem);line-height:1.18;color:var(--ink)}
+  .sec-head p{color:var(--ink2);margin-top:14px;font-size:1.02rem}
+
+  /* HERO */
+  .hero{position:relative;padding:calc(var(--bar) + clamp(26px,5vw,50px)) 0 clamp(40px,6vw,70px);overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:clamp(28px,4vw,50px);align-items:center}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.02fr .98fr}}
+  .hero .eyebrow{display:block;margin-bottom:14px}
+  .hero h1{font-family:var(--disp);font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.06;color:var(--ink)}
+  .hero h1 .r{color:var(--red)}
+  .hero-sub{max-width:36ch;margin:20px 0 0;color:var(--ink2);font-size:1.06rem;line-height:1.85}
+  .hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .hero-media{position:relative}
+  .hero-media .shot{aspect-ratio:1;overflow:hidden;border-radius:calc(var(--r)+8px);background:var(--paper);border:2px solid var(--ink);box-shadow:10px 12px 0 var(--amber)}
+  .hero-media img{width:100%;height:100%;object-fit:cover}
+  .hero-media .stamp{position:absolute;right:-10px;top:-14px;background:var(--red);color:#fff;font-family:var(--disp);font-size:.94rem;padding:12px 14px;border-radius:50%;width:86px;height:86px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.15;transform:rotate(9deg);box-shadow:0 8px 20px -8px rgba(198,61,43,.6)}
+
+  /* 시그니처 강조 */
+  .sig{background:var(--ink);color:var(--cream)}
+  .sig .eyebrow{color:var(--amber)}
+  .sig h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);color:var(--cream);text-align:center;line-height:1.2}
+  .sig-points{display:grid;grid-template-columns:1fr;gap:16px;max-width:900px;margin:clamp(30px,4vw,44px) auto 0}
+  @media(min-width:720px){.sig-points{grid-template-columns:repeat(3,1fr)}}
+  .sig-pt{text-align:center;padding:10px}
+  .sig-pt .n{font-family:var(--en);font-size:1.5rem;color:var(--amber)}
+  .sig-pt h3{font-family:var(--disp);font-size:1.2rem;margin:8px 0 6px}
+  .sig-pt p{color:#C9BEAC;font-size:.92rem;line-height:1.7}
+
+  /* 메뉴 */
+  .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(12px,1.8vw,20px)}
+  @media(min-width:720px){.menu-grid{grid-template-columns:repeat(4,1fr)}}
+  .mcard{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);overflow:hidden;transition:transform .18s,box-shadow .18s}
+  @media(hover:hover){.mcard:hover{transform:translateY(-4px) rotate(-.4deg);box-shadow:6px 8px 0 var(--amber)}}
+  .mcard .mi{aspect-ratio:1;overflow:hidden;background:#fff}
+  .mcard .mi img{width:100%;height:100%;object-fit:cover}
+  .mcard .mb{padding:12px 14px 14px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .mcard h4{font-family:var(--disp);font-size:1.04rem;line-height:1.2}
+  .mcard .pv{font-family:var(--en);font-size:1.02rem;color:var(--red);white-space:nowrap}
+  .menu-list{max-width:720px;margin:clamp(26px,3vw,38px) auto 0;background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);overflow:hidden}
+  .ml-row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:14px clamp(18px,3vw,28px);border-bottom:1.5px dashed var(--line2)}
+  .ml-row:last-child{border-bottom:0}
+  .ml-row .mn{font-family:var(--kr);font-weight:700;font-size:1rem}
+  .ml-row .md{font-size:.82rem;color:var(--faint)}
+  .ml-row .mp{font-family:var(--en);font-size:1.02rem;color:var(--ink);white-space:nowrap}
+  .menu-note{text-align:center;color:var(--faint);font-size:.84rem;margin-top:18px}
+
+  /* 세트 */
+  #sets{background:var(--cream2)}
+  .set-grid{display:grid;grid-template-columns:1fr;gap:clamp(18px,3vw,28px)}
+  @media(min-width:760px){.set-grid{grid-template-columns:1fr 1fr}}
+  .setc{background:var(--paper);border:2px solid var(--ink);border-radius:calc(var(--r)+4px);overflow:hidden;display:flex;flex-direction:column}
+  .setc .si{aspect-ratio:16/11;overflow:hidden;background:#fff}
+  .setc .si img{width:100%;height:100%;object-fit:cover}
+  .setc .sb{padding:22px 24px 24px}
+  .setc .tag{display:inline-block;background:var(--amber);color:var(--ink);font-family:var(--disp);font-size:.82rem;padding:3px 12px;border-radius:30px}
+  .setc h3{font-family:var(--disp);font-size:1.4rem;margin:12px 0 8px}
+  .setc p{color:var(--ink2);font-size:.94rem;line-height:1.75}
+  .setc .pv{font-family:var(--en);font-size:1.5rem;color:var(--red);margin-top:12px}
+
+  /* 공간 */
+  .space-grid{display:grid;grid-template-columns:1fr;gap:clamp(24px,3vw,44px);align-items:center}
+  @media(min-width:820px){.space-grid{grid-template-columns:1.05fr .95fr}}
+  .space-imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .space-imgs figure{aspect-ratio:3/4;overflow:hidden;border-radius:var(--r);background:var(--paper);border:2px solid var(--ink)}
+  .space-imgs img{width:100%;height:100%;object-fit:cover}
+  .space-body h2{font-family:var(--disp);font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.2}
+  .space-body p{color:var(--ink2);margin-top:16px;line-height:1.9}
+  .space-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .space-tags span{background:var(--paper);border:1.5px solid var(--line2);border-radius:30px;padding:7px 15px;font-size:.86rem;font-weight:600}
+
+  /* 위치 */
+  #visit{background:var(--ink);color:var(--cream)}
+  .visit-grid{display:grid;grid-template-columns:1fr;gap:clamp(24px,3vw,40px)}
+  @media(min-width:820px){.visit-grid{grid-template-columns:.9fr 1.1fr}}
+  .visit .eyebrow{color:var(--amber)}
+  .visit h2{font-family:var(--disp);font-size:clamp(1.8rem,4vw,2.6rem);margin:10px 0 20px;color:var(--cream)}
+  .visit .row{display:flex;gap:12px;padding:12px 0;border-top:1px solid rgba(255,255,255,.13)}
+  .visit .row:first-of-type{border-top:0}
+  .visit .row .k{font-family:var(--disp);font-size:.92rem;color:var(--amber);min-width:66px}
+  .visit .row .v{font-size:.95rem;color:#D8CDBB;line-height:1.7}
+  .visit .row .v a{color:var(--amber)}
+  .visit .map{border-radius:var(--r);overflow:hidden;min-height:300px;border:2px solid rgba(255,255,255,.18)}
+  .visit .map iframe{width:100%;height:100%;min-height:320px;border:0;filter:grayscale(.15)}
+  .visit .book{margin-top:22px}
+
+  footer{background:var(--cream);border-top:2px solid var(--ink);padding:clamp(44px,6vw,64px) 0 calc(36px + env(safe-area-inset-bottom))}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-end}
+  .foot .fb{font-family:var(--en);font-size:1.5rem;letter-spacing:.03em;color:var(--ink)}
+  .foot small{color:var(--faint);font-size:.78rem;line-height:1.85;display:block;margin-top:8px}
+  .foot .fl{display:flex;gap:18px;font-size:.9rem;font-family:var(--disp);color:var(--ink2)}
+  .foot .fl a:hover{color:var(--red)}
+
+  .mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1.5fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,246,238,.96);backdrop-filter:blur(10px);border-top:2px solid var(--ink)}
+  .mbar a{display:flex;align-items:center;justify-content:center;padding:13px;border-radius:34px;font-family:var(--disp);font-size:1rem}
+  .mbar .m1{border:2px solid var(--ink);color:var(--ink)} .mbar .m2{background:var(--red);color:#fff}
+
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
+  .reveal.in{opacity:1;transform:none}
+  :focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+  @media(max-width:820px){
+    .nav{display:none} .burger{display:flex}
+    .mbar{display:grid} body{padding-bottom:74px}
+  }
+  #intro{position:fixed;inset:0;z-index:200;background:var(--ink);display:flex;align-items:center;justify-content:center;animation:introOut .5s ease 1s forwards}
+  #intro .wm{text-align:center;opacity:0;transform:scale(.9);animation:introIn .55s cubic-bezier(.22,.61,.36,1) .1s forwards}
+  #intro .wm b{display:block;font-family:var(--en);font-size:clamp(2.6rem,9vw,4.6rem);color:var(--amber);letter-spacing:.04em}
+  #intro .wm i{display:block;font-style:normal;font-family:var(--disp);font-size:1rem;color:#D8CDBB;margin-top:6px;letter-spacing:.1em}
+  @keyframes introIn{to{opacity:1;transform:none}}
+  @keyframes introOut{to{opacity:0;visibility:hidden;pointer-events:none}}
+</style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}#intro{display:none !important}</style></noscript>
+</head>
+<body>
+<div id="intro" aria-hidden="true"><div class="wm"><b>88 STEAK</b><i>기본이 제일 맛있다</i></div></div>
+<div class="demo-note">이피웹(YIPI WEB) 제작 샘플 · 일부 이미지·정보는 데모용이며 실제 자료로 교체 예정입니다</div>
+
+<header class="top" id="top">
+  <a href="#home" class="brand" aria-label="88스테이크 홈"><span class="mk en">88</span><b class="en">88 STEAK</b></a>
+  <nav class="nav" aria-label="주 메뉴">
+    <a href="#menu">메뉴</a>
+    <a href="#sets">세트</a>
+    <a href="#space">공간</a>
+    <a href="#visit">오시는 길</a>
+    <a href="#visit" class="cta">네이버 예약</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="메뉴" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+</header>
+<nav id="drawer" aria-label="모바일 메뉴">
+  <a href="#menu">메뉴</a><a href="#sets">세트</a><a href="#space">공간</a><a href="#visit">오시는 길</a><a href="#visit">네이버 예약</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">서울숲 · 성수 큐브 스테이크</span>
+      <h1>기본이 제일<br><span class="r">맛있다</span></h1>
+      <p class="hero-sub">부드럽고 육즙 가득한 <b>오리지날 큐브스테이크</b>를 주문 즉시 정성껏 구워, 따끈한 밥·촉촉한 빵·특제 소스까지 한 접시에. 서울숲에서 부담 없이 즐기는 88스테이크예요.</p>
+      <div class="hero-btns">
+        <a href="https://m.place.naver.com/restaurant/2031022209/booking" target="_blank" rel="noopener" class="btn btn-red">네이버 예약하기</a>
+        <a href="#menu" class="btn btn-line">메뉴 구경하기</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="shot"><img src="hero-original.jpg" alt="88스테이크 오리지날 큐브스테이크" fetchpriority="high"></div>
+      <div class="stamp disp">서울숲역<br>도보 5분</div>
+    </div>
+  </div>
+</section>
+
+<!-- 시그니처 강조 -->
+<section class="sig">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;margin-bottom:12px">Signature</span>
+    <h2>오리지날 큐브스테이크,<br>기본에 진심입니다</h2>
+    <div class="sig-points">
+      <div class="sig-pt reveal"><div class="n en">01</div><h3>부드럽고 육즙 가득</h3><p>매일 직접 손질한 부채살 큐브스테이크를 주문 즉시 구워, 겉은 바삭 속은 촉촉하게 냅니다.</p></div>
+      <div class="sig-pt reveal"><div class="n en">02</div><h3>따끈한 밥 · 촉촉한 빵</h3><p>스테이크와 함께 갓 지은 따끈한 밥과 겉바속촉 빵을 곁들여, 든든한 한 끼로 완성돼요.</p></div>
+      <div class="sig-pt reveal"><div class="n en">03</div><h3>88만의 특제 소스</h3><p>담백하고 깊은 맛의 특제 소스로 마무리. 남녀노소 누구나 부담 없이 즐길 수 있어요.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 메뉴 -->
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Menu</span>
+      <h2>오늘은 어떤 <span class="scribble">스테이크</span>?</h2>
+      <p>큐브스테이크부터 삼겹·꼬꼬·함박까지. 주문 즉시 정성껏 조리해 드려요.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="mcard reveal"><div class="mi"><img src="hero-original.jpg" alt="오리지날 스테이크" loading="lazy"></div><div class="mb"><h4>오리지날 스테이크</h4><span class="pv en">14,800</span></div></div>
+      <div class="mcard reveal"><div class="mi"><img src="menu-tanduri.jpg" alt="탄두리 스테이크" loading="lazy"></div><div class="mb"><h4>탄두리 스테이크</h4><span class="pv en">14,800</span></div></div>
+      <div class="mcard reveal"><div class="mi"><img src="menu-moksal.jpg" alt="목살 스테이크" loading="lazy"></div><div class="mb"><h4>목살 스테이크</h4><span class="pv en">13,800</span></div></div>
+      <div class="mcard reveal"><div class="mi"><img src="menu-misosam.jpg" alt="미소삼겹 스테이크" loading="lazy"></div><div class="mb"><h4>미소삼겹 스테이크</h4><span class="pv en">13,800</span></div></div>
+      <div class="mcard reveal"><div class="mi"><img src="menu-gochusam.jpg" alt="고추장삼겹살 스테이크" loading="lazy"></div><div class="mb"><h4>고추장삼겹 스테이크</h4><span class="pv en">13,800</span></div></div>
+      <div class="mcard reveal"><div class="mi"><img src="menu-shrimp.jpg" alt="쉬림프 스테이크" loading="lazy"></div><div class="mb"><h4>쉬림프 스테이크</h4><span class="pv en">13,800</span></div></div>
+      <div class="mcard reveal"><div class="mi"><img src="menu-bulkkokko.jpg" alt="불꼬꼬 스테이크" loading="lazy"></div><div class="mb"><h4>불꼬꼬 스테이크</h4><span class="pv en">13,800</span></div></div>
+      <div class="mcard reveal"><div class="mi"><img src="menu-hambak.jpg" alt="함박 스테이크" loading="lazy"></div><div class="mb"><h4>함박 스테이크</h4><span class="pv en">10,800</span></div></div>
+    </div>
+    <div class="menu-list reveal">
+      <div class="ml-row"><div><div class="mn">스테이크 크림파스타</div><div class="md">크림 가득 파스타</div></div><div class="mp en">14,800</div></div>
+      <div class="ml-row"><div><div class="mn">바베큐 꼬꼬</div><div class="md">달달한 바베큐 치킨 스테이크</div></div><div class="mp en">13,000</div></div>
+      <div class="ml-row"><div><div class="mn">트리플 치즈피자</div><div class="md">치즈 폭탄 피자</div></div><div class="mp en">12,800</div></div>
+      <div class="ml-row"><div><div class="mn">일본식 카레</div><div class="md">부드러운 계란 + 진한 카레</div></div><div class="mp en">10,800</div></div>
+    </div>
+    <p class="menu-note">※ 가격·구성은 변동될 수 있어요. 최신 메뉴는 매장·네이버 플레이스에서 확인해 주세요.</p>
+  </div>
+</section>
+
+<!-- 세트 -->
+<section id="sets">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Set Menu</span>
+      <h2>둘이서, 소풍처럼</h2>
+      <p>서울숲 나들이엔 세트로 더 든든하게.</p>
+    </div>
+    <div class="set-grid">
+      <div class="setc reveal">
+        <div class="si"><img src="set-picnic.jpg" alt="서울숲 피크닉 세트" loading="lazy"></div>
+        <div class="sb"><span class="tag">서울숲 나들이</span><h3>서울숲 피크닉 세트</h3><p>서울숲 소풍처럼 즐기는 구성. 스테이크와 사이드를 한 번에, 나눠 먹기 좋게 준비했어요.</p><div class="pv en">35,800원</div></div>
+      </div>
+      <div class="setc reveal">
+        <div class="si"><img src="set-couple.jpg" alt="88 커플 세트" loading="lazy"></div>
+        <div class="sb"><span class="tag">둘이서 더 맛있는</span><h3>88 커플 세트</h3><p>스테이크에 파스타·사이드·음료까지. 데이트·둘이서 방문할 때 딱 좋은 세트예요.</p><div class="pv en">39,800원</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 공간 -->
+<section id="space">
+  <div class="wrap space-grid">
+    <div class="space-imgs reveal">
+      <figure><img src="interior.jpg" alt="88스테이크 내부 공간" loading="lazy"></figure>
+      <figure><img src="exterior.jpg" alt="88스테이크 서울숲 야간 외관" loading="lazy"></figure>
+    </div>
+    <div class="space-body reveal">
+      <span class="eyebrow">Our Place</span>
+      <h2 style="margin-top:12px">혼밥부터 모임까지,<br>편하게 오세요</h2>
+      <p>서울숲역·성수동에서 가까워 접근성이 좋아요. 혼밥부터 데이트, 친구 모임, 직장인 식사, 아이와 함께하는 가족 외식까지 — 누구나 부담 없이 즐길 수 있는 공간입니다. 청첩장 모임·회식 같은 단체도 최대 8명까지 가능해요.</p>
+      <div class="space-tags">
+        <span>🍽️ 혼밥</span><span>💛 데이트</span><span>👯 친구 모임</span><span>🎉 회식·단체</span><span>👶 아이와 함께</span><span>🥡 포장·배달</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 위치 -->
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div class="reveal">
+      <span class="eyebrow">Visit</span>
+      <h2>오시는 길</h2>
+      <div class="row"><div class="k">주소</div><div class="v">서울 성동구 성수일로1길 16 2층<br>88스테이크 서울숲</div></div>
+      <div class="row"><div class="k">지하철</div><div class="v">수인분당선 서울숲역 2번 출구 도보 5분 (385m)<br>2호선 뚝섬역 7번 출구 도보 8분</div></div>
+      <div class="row"><div class="k">영업</div><div class="v">매일 · 라스트오더 20:00 · 매주 일요일 휴무</div></div>
+      <div class="row"><div class="k">전화</div><div class="v"><a href="tel:0507-1395-0188">0507-1395-0188</a></div></div>
+      <div class="row"><div class="k">예약</div><div class="v">네이버 예약 · 1~8명 (단체 최대 8명) · 포장·배달 가능</div></div>
+      <div class="book"><a href="https://m.place.naver.com/restaurant/2031022209/booking" target="_blank" rel="noopener" class="btn btn-red">네이버 예약하기</a></div>
+    </div>
+    <div class="map reveal"><iframe title="88스테이크 위치" loading="lazy" src="https://www.google.com/maps?q=서울 성동구 성수일로1길 16 88스테이크&output=embed"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="fb en">88 STEAK</div>
+      <small>88스테이크 서울숲 · 서울 성동구 성수일로1길 16 2층 · 0507-1395-0188<br>라스트오더 20:00 · 매주 일요일 휴무 · 본 페이지는 이피웹(YIPI WEB) 제작 샘플입니다.</small>
+    </div>
+    <div class="fl"><a href="#menu">메뉴</a><a href="#visit">예약</a><a href="https://www.instagram.com/88steakss/" target="_blank" rel="noopener">인스타그램</a></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:0507-1395-0188" class="m1">전화</a>
+  <a href="https://m.place.naver.com/restaurant/2031022209/booking" target="_blank" rel="noopener" class="m2">네이버 예약</a>
+</div>
+
+<script>
+  setTimeout(function(){var r=document.querySelectorAll('.reveal');for(var i=0;i<r.length;i++){r[i].classList.add('in');}},1500);
+</script>
+<script>
+  var hdr=document.getElementById('top');
+  var onS=function(){hdr.classList.toggle('solid',window.scrollY>20);};
+  onS(); window.addEventListener('scroll',onS,{passive:true});
+  var burger=document.getElementById('burger'), drawer=document.getElementById('drawer');
+  burger.addEventListener('click',function(){var o=drawer.classList.toggle('open');burger.setAttribute('aria-expanded',o?'true':'false');});
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){drawer.classList.remove('open');burger.setAttribute('aria-expanded','false');});});
+  var BAR=64;
+  function smoothTo(toY,dur){
+    var maxY=Math.max(0,document.documentElement.scrollHeight-window.innerHeight);
+    toY=Math.max(0,Math.min(toY,maxY));
+    var startY=window.scrollY, dist=toY-startY, t0=null;
+    if(document.hidden||Math.abs(dist)<2){window.scrollTo(0,toY);return;}
+    dur=dur||640;
+    function ease(p){return p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;}
+    function step(ts){if(t0===null)t0=ts;var p=Math.min((ts-t0)/dur,1);window.scrollTo(0,Math.round(startY+dist*ease(p)));if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var t=document.querySelector(id);if(!t)return;
+      e.preventDefault();smoothTo(t.getBoundingClientRect().top+window.scrollY-BAR);});
+  });
+  var revs=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:0.12});
+    revs.forEach(function(el){io.observe(el);});
+  } else { revs.forEach(function(el){el.classList.add('in');}); }
+  var intro=document.getElementById('intro');
+  if(intro){setTimeout(function(){intro.style.display='none';},1600);}
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+name = "88steakss-sample"
+compatibility_date = "2024-11-01"
+[assets]
+directory = "./"
