@@ -1,0 +1,11 @@
+.git
+.git/**
+wrangler.toml
+.assetsignore
+README.md
+STRUCTURE.md
+CHANGELOG.md
+img
+img/**
+menu-chapchap.jpg
+_*
